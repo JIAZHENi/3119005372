@@ -32,7 +32,7 @@ public class SimHashUtils {
     public static String getSimHash(String str){
         // 文本长度太短时HanLp无法取得关键字
         try{
-            if(str.length() < 200) throw new ShortStringException("文本过短！");
+            if(str.length() < 100) throw new ShortStringException("文本过短！");
         }catch (ShortStringException e){
             e.printStackTrace();
             return null;
